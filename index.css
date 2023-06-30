@@ -1,0 +1,72 @@
+body {
+  background-color: grey;
+}
+header {
+}
+#Recuadrolinks {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacto {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#productos {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#turnos {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#logo {
+  float: left;
+}
+#logo2 {
+  float: right;
+  margin-left: 10px;
+}
+h1 {
+  text-align: center;
+  color: black;
+  text-shadow: 1.4px 1.4px 1.4px white;
+  text-overflow: ellipsis;
+  font-size: 50px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img2 {
+  margin-left: 10px;
+}
+#img3 {
+    margin-left: 10px;
+}
+footer{
+
+}
+b{
+    font-size: 25px;
+    text-align: justify;
+    line-height: 2;
+}
+#img4{
+    float:left;
+}
