@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./funciones.js"></script>
+    <link rel="stylesheet" href="pagar.css" />
+    <title>PAGO</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset id="tres">
+          <form>
+            <p>Método de Pago:</p>
+            <input type="radio" id="efectivo" name="metodoPago" value="efectivo" onclick="mostrarFormularioTarjeta(false)">
+            <label for="efectivo">Efectivo</label><br>
+            <input type="radio" id="tarjeta" name="metodoPago" value="tarjeta" onclick="mostrarFormularioTarjeta(true)">
+            <label for="tarjeta">Tarjeta</label><br><br>
+      
+            <div id="formularioTarjeta" style="display: none;">
+              <p>Datos de la Tarjeta:</p>
+              <label for="numeroTarjeta">Número de Tarjeta:</label>
+              <input type="text" id="numeroTarjeta" name="numeroTarjeta" required><br><br>
+              <label for="nombreTarjeta">Nombre en la Tarjeta:</label>
+              <input type="text" id="nombreTarjeta" name="nombreTarjeta" required><br><br>
+              <label for="fechaTarjeta">Fecha de Vencimiento (MM/AA):</label>
+              <input type="text" id="fechaTarjeta" name="fechaTarjeta" required><br><br>
+              <label for="cvvTarjeta">CVV:</label>
+              <input type="text" id="cvvTarjeta" name="cvvTarjeta" required><br><br>
+            </div>
+      
+            <div id="formularioInformacion" style="display: none;">
+              <p>Información del Cliente:</p>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required><br><br>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required><br><br>
+              <label for="direccion">Dirección:</label>
+              <input type="text" id="direccion" name="direccion" required><br><br>
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono" name="telefono" required><br><br>
+              <input type="radio" id="envio" name="envioRetiro" value="envio" checked>
+              <label for="envio">Envío</label>
+              <input type="radio" id="retiro" name="envioRetiro" value="retiro">
+              <label for="retiro">Retiro en Local</label><br><br>
+            </div>
+      
+            <button id="index" type="button" onclick="realizarCompra()">Finalizar Compra</button>
+            <div id="mensajeCompra"></div>
+          </form>
+        </fieldset>
+      </div>
+        <br /><hr /><br />
+        <footer style="display: flex; justify-content: center;">
+            <a href="./index.html">
+                <button type="button" id="index">VOLVER</button>
+            </a>
+        </footer>
+</body>
+</html>

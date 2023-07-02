@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./funciones.js"></script>
+    <link rel="stylesheet" href="comprar.css" />
+    <title>COMPRAS</title>
+</head>
+<body>
+    <div style="justify-content: center; align-items: center;">
+    <fieldset id="uno">
+        <form>
+            <p>Total a pagar con descuento:</p>
+          <div id="productos">
+            <div>
+              <span>Cuánto cuesta el producto que estás adquiriendo?</span>
+              <input type="text" name="precio" placeholder="Precio" required /><br /><br />
+            </div>
+          </div>
+          <button type="button" onclick="agregarProducto()">Agregar Producto</button><br /><br />
+          <select id="operaciones">
+            <option value="prom1">Soy socio</option>
+            <option value="prom2">Soy nuevo</option>
+            <option value="prom3">Tengo descuento GRAL</option>
+          </select>
+          <div id="resultado"></div><br />
+          <button type="button" onclick="calcularTotal()">TOTAL</button>
+          <button type="button" onclick="borrar()">BORRAR</button>
+        </form>
+    </fieldset>
+</div>
+<br /><hr /><br />
+    <div style="justify-content: center; align-items: center;">
+    <fieldset id="dos">
+        <form>
+          <p>Comparación de productos:</p>
+          <span>Nombre de la paleta:</span>
+          <input type="text" id="nombre1" name="nombre1" placeholder="nombre1" /><br /><br />
+          <span>Precio:</span>
+          <input type="text" id="precio1" name="precio1" placeholder="Precio1" /><br /><br />
+          <span>Nombre de la paleta:</span>
+          <input type="text" id="nombre2" name="nombre2" placeholder="nombre2" /><br /><br />
+          <span>Precio:</span>
+          <input type="text" id="precio2" name="precio2" placeholder="Precio2" /><br /><br />
+          <div id="mensaje"></div><br />
+          <button type="button" onclick="compararPrecios()">COMPARAR</button>
+          <button type="button" onclick="borrarCampos()">BORRAR</button>
+        </form>
+    </fieldset>
+</div>
+    <br /><hr /><br />
+    <footer style="display: flex; justify-content: center;">
+        <a href="./index.html">
+            <button type="button" id="index">VOLVER</button>
+        </a>
+        <a href="./pagar.html">
+            <button type="button" id="index">PAGAR</button>
+        </a>
+    </footer>
+    
+</body>
+</html>

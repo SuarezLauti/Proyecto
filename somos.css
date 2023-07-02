@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(20, 129, 20);
+}
+#logo{
+    float: left;
+    margin-right: 20px;
+}
+#texto{
+    background-color: grey;
+}
+b{
+    font-size: px;
+}
+#index{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    justify-content: baseline;
+}
+#historia{
+    background-color: grey;
+}

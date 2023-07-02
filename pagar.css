@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(20, 129, 20);
+}
+#tres{
+    background-color: grey;
+}
+#index{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

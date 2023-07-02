@@ -8,12 +8,12 @@
 body{
     background-color: grey;
 }
-#Contactanos{
+#uno{
     background-color: rgb(20, 129, 20);
 }
-#texto{
+#dos{
     background-color: rgb(20, 129, 20);
-    display: flex; 
-    justify-content: center; 
-    gap: 20px;
+}
+#tres{
+    background-color: rgb(20, 129, 20);
 }
